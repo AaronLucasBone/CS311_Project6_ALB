@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bellarmine Financials</title>
+    <link rel="stylesheet" href="index.css"/>
+
+</head> 
+<body>
+    <h1 id="header">
+        Bellarmine Financials - Balance Sheet Calculator
+    </h1>
+
+    <div class="row">
+        <div class="column" style="background-color:#AFE1AF;">
+            <h2>Assets</h2>
+            
+
+            <!-- Add Current Assets -->
+
+            <label for="lblCurrentAssets"> Current Assets: <br></label>
+            <button id="show-AddCurrentAssets" onclick="showCA()">Add Current Assets</button>
+            
+            <div id="addCurrentAssets">
+                    <label for="input-Cash"> Cash: </label>
+                    <input id="input-Cash" name="input-Cash"><br />
+
+                    <label for="input-Inventory"> Inventory: </label>
+                    <input id="input-Inventory" name="input-Inventory"><br />
+
+                    <label for="input-Supplies"> Supplies: </label>
+                    <input id="input-Supplies" name="input-Supplies"><br />
+
+                    <label for="input-tempInvestments"> Temporary Investments: </label>
+                    <input id="input-tempInvestments" name="input-tempInvestments"><br />
+
+                    <label for="totalCA">Total Current Assets: </label>
+            </div>
+                    
+
+            <!-- Add Investments -->
+
+            <label for="lblInvestment"><br> Investment Property & Equipment: <br></label>
+            <button id="show-AddInvestment" onclick="showInvestment()">Add Investment Property and Equipment</button>
+            <div id="addInvestment">
+                <label for="input-Land"> Land: </label>
+                <input id="input-Land" name="input-Land"><br />
+
+                <label for="input-Building"> Building: </label>
+                <input id="input-Building" name="input-Building"><br />
+
+                <label for="input-Equipment"> Equipment: </label>
+                <input id="input-Equipment" name="input-Equipment"><br />
+
+                <label for="input-tempLandInvestments"> Temporary Investments </label>
+                <input id="input-tempLandInvestments" name="input-tempLandInvestments"><br />
+
+                <label for="totalInvestment">Total Investment Property and Equipment: </label>
+
+            </div>
+
+            <!-- Add Intangibles -->
+
+            <label for="lblIntangibles"><br> Intangibles: <br></label>
+            <button id="show-AddIntangibles" onclick="showIntangibles()">Add Intangibles</button>
+
+            <div id="addIntangibles">
+                <label for="input-Trade"> Trade Names: </label>
+                <input id="input-Trade" name="input-Trade"><br />
+
+                <label for="input-Goodwill"> Goodwill: </label>
+                <input id="input-Goodwill" name="input-Goodwill"><br />
+
+                <label for="totalIntangibles">Total Intangibles: </label>
+
+            </div>
+
+        </div>
+        <div class="column" style="background-color:#FFB695;">
+            <h2>Liabilities</h2>
+
+            <!-- Add Liabilities -->
+
+            <label for="lblCurrentLiabilities"> Current Liabilities: <br></label>
+            <button id="show-CLiabilities" onclick="showCLiabilities()">Add Current Liabilities</button>
+
+            <div id="addCurrentLiabilities">
+                <label for="input-Accounts"> Accounts Payable: </label>
+                <input id="input-Accounts" name="input-Accounts"><br />
+
+                <label for="input-Notes"> Notes Payable: </label>
+                <input id="input-Notes" name="input-Notes"><br />
+
+                <label for="input-Interest"> Interest Payable: </label>
+                <input id="input-Interest" name="input-Interest"><br />
+
+                <label for="input-Wages"> Wages Payable: </label>
+                <input id="input-Wages" name="input-Wages"><br />
+
+                <label for="input-Accrued"> Accrued Expenses: </label>
+                <input id="input-Accrued" name="input-Accrued"><br />
+
+                <label for="totalCurrentLiabilities">Total Current Liabilities: </label>
+
+            </div>
+
+            <!-- Add Long-Term Liabilities -->
+
+            <label for="lblLongTermLiabilities"><br> Long-Term Liabilities: <br></label>
+            <button id="show-LTLiabilities" onclick="showLTLiabilities()">Add Long-Term Liabilities</button>
+            
+            <div id="addLTLiabilities">
+                <label for="input-Accounts"> Notes Payable: </label>
+                <input id="input-Accounts" name="input-Accounts"><br />
+
+                <label for="input-Bonds"> Bonds Payable: </label>
+                <input id="input-Bonds" name="input-Bonds"><br />
+
+                <label for="totalCurrentLiabilities">Total Current Liabilities: <br /></label>
+
+            </div>
+
+
+            <!-- Concluding Info -->
+
+        </div>
+
+        <div class="column" style="background-color:#FFDB58;">
+            <h2>Total Position: </h2> 
+
+            <button id="btn-calcPosition" onclick="calcPosition()">Calculate Position<br></button>
+
+            <label for="total-Assets"><br>Total Assets: <span id="output-Assets"></span></label>
+
+            <label for="input-Liabilities"><br> Total Liabilties: <span id="output-Liabilities"></span></label>
+
+            <label for="input-Position"><br> Position: <span id="output-Position"></span><br></label>
+
+        </div>
+
+    </div>
+    <footer id="bellarmineFooter"> &copy;	Bellarmine University 2022</footer>
+
+    <script src='index.js'></script>
+
+</body>

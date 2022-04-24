@@ -1,0 +1,52 @@
+#header{
+    background-color: darkred;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    color: aliceblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+#column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    }
+
+#row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#addCurrentAssets{
+    display: none;
+}
+
+#addInvestment{
+    display: none;
+}
+
+#addIntangibles{
+    display: none;
+}
+
+#addCurrentLiabilities{
+    display: none; 
+}
+
+#addLTLiabilities{
+    display: none; 
+}
+
+#inputDropdown{
+    display: none;
+}
+#bellarmineFooter{
+    background-color: darkred;
+    display: flexbox;
+    color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
